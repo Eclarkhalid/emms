@@ -1,0 +1,481 @@
+  @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700;800&display=swap');
+
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  :root{
+    --primary: #2b3d4c;
+    --primary1: #2b3d41;
+    --search: #FF6000;
+    --primary2: #27373b;
+    --color-1: #e9f1f7;
+    --color-2: #FFA559;
+    --color-3: #4c616677;
+  }
+
+  body{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 16px;
+  }
+
+  a{
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  p{
+    font-weight: 400;
+  }
+  h6{
+    font-size: 16px;
+  }
+
+  .gap-10{
+    gap: 10px;
+  }
+
+  .gap-15{
+    gap: 15px;
+  }
+
+  .gap-30{
+    gap: 30px;
+  }
+
+  .my-link{
+    transition: 0.5s ease;
+  }
+
+  .my-link:hover{
+    text-decoration: underline;
+  }
+  img{
+    transition: 0.5s ease-in-out;
+  }
+
+  .img-circle{
+    padding: 3px;
+    transition: 0.5s ease;
+  }
+
+  .img-circle:hover{
+    background-color: var(--color-2);
+    border-radius: 50px;
+  }
+
+  .img:hover {
+    transform: scale(1.03);
+  }
+  
+
+  .button{
+    background-color: var(--primary1);
+    color: white;
+    padding: 13px 33px;
+    font-size: 14px;
+    border-radius: 25px;
+    margin-top: 10px;
+    transition: 0.5s ease;
+  }
+
+  .button:hover{
+    background-color: var(--color-2);
+    color: var(--primary2);
+  }
+
+  .card-wrapper{
+        background-color: white;
+    box-shadow: 0 0 10px var(--color-1);
+    padding: 15px;
+  }
+
+  .section-heading{
+    font-size: 30px;
+    line-height: 32px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+
+  /* header start */
+  .header-top-strip{
+    background-color: var(--primary);
+  }
+  .header-upper{
+    background-color: var(--primary1);
+    border: 1px solid var(--primary);
+  }
+
+  .header-upper .logo{
+    max-width: 100%;
+    height: 35px;
+  }
+
+  .header-upper .input-group-text{
+    background-color: var(--search);
+    border: 0;
+    cursor: pointer;
+  }
+
+  .form-control:focus{
+    box-shadow: none;
+    border-color: inherit;
+  }
+
+  .header-upper .header-upper-links img{
+    width: 35px;
+    height: 35px;
+  }
+
+  .header-upper-links p{
+    transition: 0.5s ease;
+  }
+
+  .header-upper-links p:hover{
+    color: var(--search);
+  }
+
+  .header-bottom{
+    background-color: var(--primary2);
+  }
+
+  .header-bottom .menu-links a{
+    color: white;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    letter-spacing: 0.3;
+    text-transform: uppercase;
+    transition: 0.5s ease;
+  }
+
+
+  .header-bottom .dropdown button{
+    color: white;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    letter-spacing: 0.3;
+    text-transform: uppercase;
+    background: transparent;
+    border: 0;
+  }
+
+  .header-bottom .dropdown button:focus{
+    box-shadow: none;
+  }
+
+  .header-bottom .dropdown-menu{
+    background-color: var(--primary2);
+    width: 100%;
+    transform: translate3d(0px, 57px, 0px) !important;
+  }
+
+  .header-bottom .dropdown-item{
+    padding: 20px;
+    margin-bottom: 3px;
+    border-bottom: 1px solid var(--primary);
+  }
+
+  .header-bottom .dropdown-item:hover{
+    background-color: transparent;
+    color: white !important;
+  }
+
+  /* Header ends here */
+
+  /* Footer Starts Here */
+footer{
+  background-color: var(--primary2);
+}
+
+footer:not(:first-child){
+  border: 1px solid var(--primary);
+}
+
+footer .input-group-text{
+  background-color: #27373b;
+  color: whitesmoke;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 8px 17px;
+  transition: 0.5s ease;
+}
+
+footer .input-group-text:hover{
+  color: var(--search);
+}
+
+  /* Footer Ends here */
+
+
+  /* Home starts here */
+  .main-banner-content{
+    top: 15%;
+    left: 5%;
+  }
+
+  .main-banner-content h4{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--search);
+    margin: 0 0 12px;
+    letter-spacing: 0.3;
+    text-transform: uppercase;
+  }
+
+  .main-banner-content h5{
+    font-size: 42px;
+    line-height: 54px;
+    font-weight: 500;
+    letter-spacing: -2px;
+    text-transform: none;
+  }
+
+  .main-banner-content p{
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.4;
+    color: var(--primary);
+  }
+
+  .carousel-control-next, .carousel-control-prev {
+    width: auto;
+}
+
+  .small-banner-content{
+    top: 25%;
+    left: 10%;
+  }
+
+  .small-banner-content h4{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--search);
+    margin: 0 0 10px;
+    letter-spacing: 0.3;
+    text-transform: uppercase;
+  }
+
+  .small-banner-content h5{
+    font-size: 32px;
+    line-height: 34px;
+    font-weight: 500;
+    letter-spacing: -2px;
+    text-transform: none;
+  }
+
+  .small-banner-content p{
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.4;
+    color: var(--primary);
+  }
+
+  .small-banner{
+    width: 49%;
+  }
+
+  .small-banner img{
+    width: 100%;
+  }
+
+  /* home wrapper 2 begins */
+  .home-wrapper-2{
+    background-color: var(--color-1);
+  }
+
+  .categories{
+    background-color: white;
+    box-shadow: 0 0 10px var(--color-1);
+    padding: 15px;
+  }
+
+  .categories >div{
+    width: 24%;
+    padding: 10px 10px 10px 20px;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+  }
+
+  .categories >div p{
+    color: var(--search);
+  }
+
+  .categories >div:nth-child(1),
+  .categories >div:nth-child(2),
+  .categories >div:nth-child(3),
+  .categories >div:nth-child(4){
+    border-bottom: 1px solid transparent;
+  }
+
+  .categories >div:nth-child(1),
+  .categories >div:nth-child(2),
+  .categories >div:nth-child(3){
+    border-right: 1px solid transparent;
+  }
+
+  .categories >div:nth-child(5),
+  .categories >div:nth-child(6),
+  .categories >div:nth-child(7),
+  .categories >div:nth-child(8){
+    border-bottom: 1px solid transparent;
+  }
+
+  .categories >div:nth-child(5),
+  .categories >div:nth-child(6),
+  .categories >div:nth-child(7){
+    border-right: 1px solid transparent;
+  }
+
+  .categories >div:hover{
+    border-bottom: 1px solid var(--color-2);
+     border-right: 1px solid var(--color-2);
+  }
+  /* home wrapper 2 ends */
+
+  /* Blog card Begins */
+  .blog-card{
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  .blog-card img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .blog-content{
+    padding: 15px;
+
+  }
+
+  .blog-content p.date{
+    font-size: 13px;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: var(--color-3);
+    padding: 0;
+  }
+
+  .blog-content h5{
+    font-size: 20px;
+    color: var(--primary1);
+  }
+
+  .blog-content .desc{
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--primary);
+  }
+  /* Blog card ends */
+
+  /* Featured collection starts */
+  .product-card{
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s ease;
+  }
+
+  .product-card:hover .action-bar{
+    right: 13%;
+  }
+  
+  .product-card .product-details h6{
+    color: var(--primary);
+    font-size: 18px;
+  }
+
+  .product-card .product-details h5{
+    font-size: 20px;
+    color: var(--color-2);
+  }
+
+  .product-card .product-details p.price{
+    font-size: 16px;
+    color: var(--primary1);
+  }
+
+  .action-bar{
+    top: 10%;
+    right: -23px;
+    transition: 0.8s ease;
+  }
+
+
+  .wishlist-icon{
+    top: 2px;
+    right: 15%;
+  }
+
+  .product-image{
+    transition: all 1.0s ease;
+  }
+
+  .product-card .product-image > img:nth-child(2){
+    display: none;
+  }
+
+  .product-card:hover .product-image > img:nth-child(1){
+    display: none;
+  }
+
+  .product-card:hover .product-image > img:nth-child(2){
+    display: block;
+    object-fit: contain;
+  }
+
+  .product-card .product-image .img-2{
+    height: 268.99px;
+    width: 268.99px;
+    transition: 0.5s ease;
+  }
+
+  .product-card .product-image img{
+    object-fit: contain;
+  }
+
+  
+  /* Featured collection ends */
+
+  /* Special products */
+  .special-product-card{
+    padding: 20px 10px;
+    border-radius: 10px;
+    background-color: white;
+  }
+
+  .brand{
+    font-size: 14px;
+    line-height: 34px;
+    font-weight: 500;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+    color: var(--primary);
+  }
+
+  .special-product-content h6{
+    font-size: 18px;
+  }
+  /* Special Products ends */
+
+  /* Famous Wrapper */
+  .famous-card .famous-content{
+    top: 10%;
+    left: 10%;
+  }
+    
+  /* Famous Wrapper ends */
+
+
+  /* Home ends here  */
